@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h2>Survey Form</h2>
+    <form>
+        <!-- Text Input (Short Answer) -->
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        
+        <!-- Multiple-choice Questions -->
+        <p>Q1. Which is your favorite color?</p>
+        <input type="radio" name="color" value="Red"> Red<br>
+        <input type="radio" name="color" value="Blue"> Blue<br>
+        <input type="radio" name="color" value="Green"> Green<br>
+        <input type="radio" name="color" value="Yellow"> Yellow<br>
+        
+        <p>Q2. What is your favorite programming language?</p>
+        <input type="radio"  name="language" value="Python">Python
+        <input type="radio" name="language" value="JavaScript">JavaScript
+        <input type="radio" name="language" value="Java"> Java
+        <br><br>
+        
+        <!-- Checkboxes for Multiple Options -->
+        <p>Q3.Which fruits do you like?</p> 
+        <input type="checkbox" name="fruits" value="Apple"> Apple
+        <input type="checkbox" name="fruits" value="Banana"> Banana
+        <input type="checkbox" name="fruits" value="Mango"> Mango
+        <input type="checkbox" name="fruits" value="Orange"> Orange<br>
+
+        <p>Q4. Which hobbies do you enjoy?</p>
+        <input type="checkbox" name="hobbies" value="Reading"> Reading<br>
+        <input type="checkbox" name="hobbies" value="Traveling"> Traveling<br>
+        <input type="checkbox" name="hobbies" value="Gaming"> Gaming<br>
+        <input type="checkbox" name="hobbies" value="Cooking"> Cooking<br><br>
+
+
+        
+        <!-- Rating Scale (1 to 5) -->
+        <p>Q5. Rate our service (1 = Poor, 5 = Excellent):</p>
+        <input type="radio" name="rating" value="1"> 1
+        <input type="radio" name="rating" value="2"> 2
+        <input type="radio" name="rating" value="3"> 3
+        <input type="radio" name="rating" value="4"> 4
+        <input type="radio" name="rating" value="5"> 5<br>
+         
+        <label for="rating">Q6. Rate your experience with web development (1-5):</label>
+        <input type="number" name="rating" min="1" max="5">
+        <br><br>
+        
+        <!-- Dropdown Menu -->
+        <p>Q7.Select your country:</p>
+        <select name="country">
+            <option value="india">India</option>
+            <option value="usa">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="australia">Australia</option>
+        </select><br>
+
+        
+        <!-- Textarea for Longer Responses -->
+        <p>Your Comments:</p>
+        <textarea name="comments" rows="5" cols="40"></textarea><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
